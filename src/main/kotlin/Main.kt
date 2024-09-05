@@ -8,7 +8,8 @@ fun main() {
     var i = 0;
 
     while (i < fraseDigitadaPeloUsuario.length) {
-        println(i)
+        val caractere = fraseDigitadaPeloUsuario[i]
+        println(caractere)
         i++
     }
 }
