@@ -2,13 +2,14 @@ fun main() {
     println("CONTADOR DE PALAVRAS DE UMA FRASE")
 
     println("Por favor, digite uma frase: ")
-    val fraseDigitada: String = readln()
+    val typedSentence: String = readln()
 
-    val fraseDigitadaSeparada = fraseDigitada.split(" ")
+    val separateTypedSentence = typedSentence.split(" ")
 
-    val filtradorDeEspacosDaFrase = fraseDigitadaSeparada.filter { it.isNotEmpty() }
+    val sentenceSpaceFilter = separateTypedSentence.filter { it.isNotEmpty() }
 
-    val QuantidadeDePalavras = filtradorDeEspacosDaFrase.size
+    val amountOfWords: Int = sentenceSpaceFilter.size
 
-    println("Sua frase tem $QuantidadeDePalavras palavras")
+    println("Sua frase tem $amountOfWords palavras")
+
 }
