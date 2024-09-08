@@ -6,7 +6,9 @@ fun main() {
 
     val fraseDigitadaSeparada = fraseDigitada.split(" ")
 
-    val palavras = fraseDigitadaSeparada.size
+    val filtradorDeEspacosDaFrase = fraseDigitadaSeparada.filter { it.isNotEmpty() }
 
-    println("A frase contém $palavras palavras")
+    val QuantidadeDePalavras = filtradorDeEspacosDaFrase.size
+
+    println("Sua frase tem $QuantidadeDePalavras palavras")
 }
